@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>burger</title>
-
+    <!--bootstrap cdn-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,8 +23,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dosis:wght@200..800&family=Rubik+80s+Fade&display=swap"
+      rel="stylesheet"
+    />
+    <!--link css-->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body style="background-color: #fef3e2">
     <nav style="background-color: #fab12f" class="navbar navbar-expand-sm">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-1" href="#">
@@ -44,21 +56,14 @@
         </button>
       </div>
 
-      <nav class="navbar">
+      <nav class="navbars">
         <div class="container-fluid">
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav p-3 fs-5 ms-5">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Testimonials</a>
-              <a class="nav-link" href="#">Contact</a>
-              <button
-                style="width: 140px"
-                class="btn btn-danger fw-bold fs-5 p-2 rounded-3"
-                type="button"
-              >
-                Order Now
-              </button>
+              <a class="nav-link active" aria-current="page" href="">Home</a>
+              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#customer">Testimonials</a>
+              <a class="nav-link" href="">Contact</a>
             </div>
           </div>
         </div>
@@ -66,25 +71,36 @@
     </nav>
 
     <section>
-      <div class="position-relative">
+      <div id="features" class="position-relative">
         <img
           src="./assets/burger image.jpg"
           class="img-fluid w-100"
           alt="Burger"
         />
+
         <div
-          style="width: 370px; top: 100px; left: 130px; color: white"
+          style="width: 410px; top: 100px; left: 120px; color: white"
           class="position-absolute ;"
         >
-          <h1 style="font-size: 50px">
+          <h1 style="font-size: 65px; font-family: Cormorant Garamond, serif">
             The Ultimate 24-Hour Energy Burger is Here
           </h1>
-          <h4 style="font-weight: lighter; margin-top: 25px">
+          <h4
+            style="
+              font-weight: lighter;
+              margin-top: 25px;
+              font-family: Dosis, sans-seri;
+            "
+          >
             Fuel your longest day with a single, delicious meal
           </h4>
           <button
-            style="width: 250px; background-color: rgb(9, 138, 138)"
-            class="btn text-light fw-bold fs-5 p-2 rounded-4 mt-3"
+            style="
+              width: 250px;
+              background-color: rgb(9, 138, 138);
+              font-family: Cormorant Garamond, serif;
+            "
+            class="btn text-light fs-4 fw-bold fs-5 p-2 rounded-4 mt-3"
             type="button"
           >
             Try Zenith Fuel Now
@@ -94,85 +110,138 @@
     </section>
 
     <section>
-      <div style="background-color: #fef3e2; width: 100%" class="card">
+      <div
+        style="background-color: #fef3e2; border-width: 0px; width: 100%"
+        class="card"
+      >
         <br /><br /><br />
 
         <div class="container">
-          <h2 class="fw-bold text-center mb-5">
+          <h2
+            class="fw-bold text-center mb-5"
+            style="
+              font-size: 50px;
+              font-family: Cormorant Garamond, serif;
+              text-shadow: 2px 2px 2px gray;
+              color: #f87924;
+            "
+          >
             Unlock Your Day's Full Potential
           </h2>
           <br /><br />
+
           <div class="row text-center">
             <div class="col-md-4 mb-4">
-              <i
-                class="fa-regular fa-clock"
-                style="font-size: 60px; color: rgb(14, 186, 186)"
-              ></i>
+              <img
+                style="width: 100px"
+                src="./assets/availability.png"
+                alt=""
+              />
+
               <h5 class="fw-bold mt-3">24-HOUR POWER</h5>
               <p class="fs-5">Experience a full day of peak productivity...</p>
             </div>
+
             <div class="col-md-4 mb-4">
-              <i
-                class="fa-regular fa-lightbulb"
-                style="font-size: 60px; color: rgb(14, 186, 186)"
-              ></i>
+              <img style="width: 100px" src="./assets/idea (1).png" alt="" />
+
               <h5 class="fw-bold mt-3">LASER FOCUS FORMULA</h5>
               <p class="fs-5">Unlock next-level concentration...</p>
             </div>
-            <div class="col-md-4 mb-4">
-              <i
-                class="fa-solid fa-leaf"
-                style="font-size: 60px; color: rgb(14, 186, 186)"
-              ></i>
+            <div data-aos-duration="2500" class="col-md-4 mb-4">
+              <img
+                style="width: 100px"
+                src="./assets/no-preservatives.png"
+                alt=""
+              />
+
               <h5 class="fw-bold mt-3">100% ORGANIC</h5>
               <p class="fs-5">Made with all-natural ingredients...</p>
             </div>
           </div>
-          <br /><br />
+        </div>
+      </div>
+      <br /><br />
+    </section>
 
-          <div>
-            <h3 class="fw-bold ms-5 text-center">
-              Hear from Our Powered-Up Customers
-            </h3>
+    <section>
+      <div id="customer" data-aos="fade-up" data-aos-duration="3000">
+        <h3
+          class="fw-bold ms-5 text-center"
+          style="
+            font-size: 50px;
+            font-family: Cormorant Garamond, serif;
+            text-shadow: 1px 1px 2px gray;
+            color: #f87924;
+          "
+        >
+          Hear from Our Powered-Up Customers
+        </h3>
+      </div>
+      <br /><br />
+      <div>
+        <div class="box d-flex justify-content-evenly mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            style="width: 480px; height: 200px; background-color: #fef3e2"
+            class="card pt-4 ps-2"
+          >
+            <h5>- "Just a burger and boom — top of the class! "</h5>
+            ⭐⭐⭐⭐⭐
+            <h6>John, Student</h6>
           </div>
-          <br /><br />
-          <div class="container">
-            <div class="d-flex justify-content-center">
-              <div class="row justify-content-center">
-                <div class="col-md-10 bg-light rounded p-4">
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <h5>
-                        "I had one burger before my exam – I didn't even need
-                        coffee!"
-                      </h5>
-                      <h6 class="fw-light">Alex, Student</h6>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <h5>
-                        "Zenith Fuel keeps me focused during long coding
-                        sessions"
-                      </h5>
-                      <h6 class="fw-light">Meera, Developer</h6>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            style="width: 480px; height: 200px; background-color: #fef3e2"
+            class="card pt-4 ps-2"
+          >
+            <h5>
+              "I had one burger before my exam – I didn't even need coffee!"
+            </h5>
+            ⭐⭐⭐⭐⭐
+            <h6>Alex, Student</h6>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            style="width: 480px; height: 200px; background-color: #fef3e2"
+            class="card pt-4 ps-2"
+          >
+            <h5>"Zenith Fuel keeps me focused during long coding sessions"</h5>
+
+            ⭐⭐⭐⭐⭐
+            <h6>Meera, Developer</h6>
           </div>
         </div>
       </div>
     </section>
+
     <footer class="bg-warning text-dark p-3">
       <div class="container d-flex justify-content-between align-items-center">
-        <p class="mb-0">Zenith Food Co. &copy; 2025. All rights reserved.</p>
-        <div class="fs-4">
-          <i class="fa-brands fa-instagram me-3"></i>
-          <i class="fa-brands fa-facebook me-3"></i>
-          <i class="fa-brands fa-twitter me-3"></i>
-          <i class="fa-brands fa-x-twitter"></i>
+        <p class="mb-0 fs-5">
+          Zenith Food Co. &copy; 2025. All rights reserved.
+        </p>
+        <div class="icon d-flex fs-5">
+          <div class="icon-container">
+            <i class="fa-brands fa-instagram me-3"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-facebook me-3"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-twitter me-3"></i>
+          </div>
+          <div class="icon-container">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
         </div>
       </div>
     </footer>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
